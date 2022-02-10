@@ -10,7 +10,7 @@
   </button>
 
   <mat-form-field appearance="fill" *ngIf="_router.url == '/dashboard'">
-    <input type=[search] matInput placeholder="Search Applications" [(ngModel)]="searchKeyword" (keyup)="Search()">
+    <input type=[search] matInput placeholder="Search Applications" [(ngModel)]="searchKeyword" (keyup)="Search()" autocomplete="search">
   </mat-form-field>
 </mat-toolbar>
 <mat-sidenav-container fxFlexFill class="sidenav-container">
